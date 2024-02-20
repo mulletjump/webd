@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 B-3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #wrap {
+            width: 100%;
+            margin: 0 auto;
+            
+        }
+        #header {
+            width: 100%;
+            background-color: #efefef;
+        }
+        #header .logo {
+            width: 20%;
+            height: 100px;
+            background-color: #c7c7c7;
+        }
+        #header .nav {
+            width: 20%;
+            height: 100px;
+            background-color: #bcbcbc;
+        }
+        #slider {
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #e3e3e3;
+        }
+        #contents {
+            width: 100%;
+            margin: 0 auto;
+        }
+        #contents .content1 {
+            width: 33.333%;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #8183aa;
+        }
+        #contents .content2 {
+            width: 33.333%;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #7675c4;
+        }
+        #contents .content3 {
+            width: 33.333%;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #3b6282;
+        }
+        #footer { /*자식의자식이라 여기에 flex를 써도 소용x*/
+            width: 100%;
+            height: 100px;
+            background-color: #d1d1d1;
+        }
+        #footer .footer1 {
+            width: 20%;
+            height: 100px;
+            background-color: #9d9d9d;
+        }
+        #footer .footer2 {
+            width: 60%;
+            height: 100px;
+            background-color: #8f4a4a;
+            
+        }
+        #footer .footer3 {
+            width: 20%;
+            height: 100px;
+            background-color: #9d9d9d;
+        }
+        .container {
+            width: 1200px;
+            height: inherit; /*부모값상속*/
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"> <!--한 번만 사용 id-->
+            <div class="container">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </div>    
+        </header>
+        <!-- //slider -->
+
+        <article id="slider">
+            <div class="container"></div>
+        </article>
+        <!-- //header -->
+        
+        <main id="contents">
+            <div class="container">
+                <section class="content1"></section>
+                <section class="content2"></section>
+                <section class="content3"></section>
+            </div>
+
+        </main>
+        <!-- //main -->
+
+        <footer id="footer">
+            <div class="container">
+                <div class="footer1"></div>
+                <div class="footer2"></div>
+                <div class="footer3"></div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
